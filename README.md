@@ -1,4 +1,14 @@
 # Guía de configuración de Fedora 43
+![Fedora](https://img.shields.io/badge/Fedora-43-51A2DA?style=for-the-badge&logo=fedora&logoColor=white)
+![License](https://img.shields.io/badge/License-GPL%20v3-blue.svg?style=for-the-badge)
+![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
+
+## 📑 Tabla de Contenidos
+- [Primeros pasos - RPM Fusion](#-primeros-pasos---rpm-fusion)
+- [Actualizaciones](#-actualizaciones)
+- [Flathub](#-flathub)
+- [Multimedia y Codecs](#-multimedia-y-codecs)
+- [Limpieza del Sistema](#-limpieza-del-sistema)
 
 ## 👋 Hola!
 Si estás leyendo esta guía, probablemente tengas dudas acerca
@@ -76,7 +86,6 @@ instalación de paquetes, con estos dos sencillo comandos podrás
 hacer esto mismo de una forma rápida.
 ```
 sudo dnf autoremove -y
-
 sudo dnf clean all
 ```
 
@@ -84,3 +93,8 @@ sudo dnf clean all
 Esta guía fue hecha con ❤️ amor, con el propósito de facilitar
 la tarea de configurar Fedora, eres libre de compartir y modificar
 esta guía bajo la licencia **GNU General Public License v3.0**
+
+## 📚 Recursos Adicionales
+- [Documentación oficial de Fedora](https://docs.fedoraproject.org/)
+- [RPM Fusion](https://rpmfusion.org/)
+- [Flathub](https://flathub.org/)
