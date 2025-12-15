@@ -23,10 +23,7 @@ instalar software propietario (codecs, drivers, etc...)
 Lo que resulta principalmente útil para las personas con
 hardware Nvidia o AMD.
 ```
-sudo dnf install https://mirrors.rpmfusion.org/free/fedora/
-rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https:/
-/mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-
-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 sudo dnf config-manager setopt fedora-cisco-openh264.enabled=1
 ```
@@ -46,8 +43,7 @@ Fedora viene ya con un repositorio de Flatpak's preinstalado,
 pero es algo límitado por lo que es recomendable habilitar
 Flahub para sí tener mucha más disponibilidad de software.
 ```
-flatpak remote-add --if-not-exists flathub https://dl.flathub
-.org/repo/flathub.flatpakrepo
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 ```
 
 ## 🎵 Multimedia y Codecs
@@ -59,8 +55,7 @@ la mayoría de audios y videos, así también como activar la
 ```
 sudo dnf swap ffmpeg-free ffmpeg --allowerasing
 
-sudo dnf update @multimedia --setopt="install_weak_deps=False"
- --exclude=PackageKit-gstreamer-plugin
+sudo dnf update @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
 ```
 
 ### Aceleración de Hardware Intel
